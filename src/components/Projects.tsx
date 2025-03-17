@@ -1,4 +1,3 @@
-
 import SpanLinguagens from "./SpanLinguagens";
 import { motion } from "framer-motion";
 
@@ -6,7 +5,7 @@ export default function Projects() {
   return (
     <motion.div
       id="projects"
-      className="container mx-auto px-4 md:px-20 lg:px-40 py-10 md:py-20"
+      className="container mx-auto px-4 md:px-20 lg:px-40 py-20 md:py-40"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -19,18 +18,22 @@ export default function Projects() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           Projects
-          
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 px-2 md:px-0">
+        {/* Contêiner para os projetos */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-2 md:px-0">
           {/* Projeto 1 */}
           <motion.div
-            className="flex flex-col bg-zinc-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="flex flex-col bg-zinc-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-[300px] md:h-[450px]"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, delay: 0.3 }}
             whileHover={{ scale: 1.02 }}
           >
+            <div
+              className={`bg-[url('/img/mindflow.png')] bg-cover bg-center h-[200px] md:h-[550px] rounded-t-lg`}
+            ></div>
+            <div className="h-[3px] bg-[#4169E1]"></div>
             <div className="p-4 md:p-6 flex flex-col h-full">
               <h3 className="text-black text-lg md:text-xl uppercase font-medium mb-3 md:mb-4">
                 LANDING PAGE
@@ -56,12 +59,16 @@ export default function Projects() {
 
           {/* Projeto 2 */}
           <motion.div
-            className="flex flex-col bg-zinc-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="flex flex-col bg-zinc-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-[300px] md:h-[450px]"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, delay: 0.4 }}
             whileHover={{ scale: 1.02 }}
           >
+            <div
+              className={`bg-[url('/img/previsao.png')] bg-cover bg-center h-[200px] md:h-[550px] rounded-t-lg`}
+            ></div>
+            <div className="h-[3px] bg-[#4169E1]"></div>
             <div className="p-4 md:p-6 flex flex-col h-full">
               <h3 className="text-black text-lg md:text-xl uppercase font-medium mb-3 md:mb-4">
                 PREVISÃO DO TEMPO
@@ -87,15 +94,19 @@ export default function Projects() {
 
           {/* Projeto 3 */}
           <motion.div
-            className="flex flex-col bg-zinc-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="flex flex-col bg-zinc-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-[300px] md:h-[450px]"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, delay: 0.5 }}
             whileHover={{ scale: 1.02 }}
           >
+            <div
+              className={`bg-[url('/img/gerenciamento.png')] bg-cover bg-center h-[200px] md:h-[550px] rounded-t-lg`}
+            ></div>
+            <div className="h-[3px] bg-[#4169E1]"></div>
             <div className="p-4 md:p-6 flex flex-col h-full">
               <h3 className="text-black text-lg md:text-xl uppercase font-medium mb-3 md:mb-4">
-                GERENCIADOR DE TAREFAS
+                GERENCIADOR TAREFAS
               </h3>
               <div className="flex flex-wrap gap-2 mb-3 md:mb-4">
                 <SpanLinguagens linguagem="REACT" />
@@ -126,12 +137,16 @@ export default function Projects() {
 
           {/* Projeto 4 */}
           <motion.div
-            className="flex flex-col bg-zinc-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="flex flex-col bg-zinc-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-[300px] md:h-[450px]"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, delay: 0.6 }}
             whileHover={{ scale: 1.02 }}
           >
+            <div
+              className={`bg-[url('/img/tradutor.png')] bg-cover bg-center h-[200px] md:h-[550px]  rounded-t-lg`}
+            />
+            <div className="h-[3px] bg-[#4169E1]"></div>
             <div className="p-4 md:p-6 flex flex-col h-full">
               <h3 className="text-black text-lg md:text-xl uppercase font-medium mb-3 md:mb-4">
                 TRADUTOR COM FLASK
