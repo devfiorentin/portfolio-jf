@@ -31,10 +31,10 @@ export default function Projects() {
             whileHover={{ scale: 1.02 }}
           >
             <div
-              className={`bg-[url('/img/mindflow.png')] bg-cover bg-center h-[200px] md:h-[550px] rounded-t-lg`}
+              className={`bg-[url('/img/mindflow.png')] bg-cover bg-center h-[450px] md:h-[550px] rounded-t-lg`}
             ></div>
             <div className="h-[3px] bg-[#4169E1]"></div>
-            <div className="p-4 md:p-6 flex flex-col h-full">
+            <div className="p-4 md:p-6 flex flex-col h-[400px]">
               <h3 className="text-black text-lg md:text-xl uppercase font-medium mb-3 md:mb-4">
                 LANDING PAGE
               </h3>
@@ -66,10 +66,10 @@ export default function Projects() {
             whileHover={{ scale: 1.02 }}
           >
             <div
-              className={`bg-[url('/img/previsao.png')] bg-cover bg-center h-[200px] md:h-[550px] rounded-t-lg`}
+              className={`bg-[url('/img/previsao.png')] bg-cover bg-center h-[450px] md:h-[550px] rounded-t-lg`}
             ></div>
             <div className="h-[3px] bg-[#4169E1]"></div>
-            <div className="p-4 md:p-6 flex flex-col h-full">
+            <div className="p-4 md:p-6 flex flex-col h-[400px]">
               <h3 className="text-black text-lg md:text-xl uppercase font-medium mb-3 md:mb-4">
                 PREVISÃO DO TEMPO
               </h3>
@@ -101,10 +101,10 @@ export default function Projects() {
             whileHover={{ scale: 1.02 }}
           >
             <div
-              className={`bg-[url('/img/gerenciamento.png')] bg-cover bg-center h-[200px] md:h-[550px] rounded-t-lg`}
+              className={`bg-[url('/img/gerenciamento.png')] bg-cover bg-center h-full md:h-[550px] rounded-t-lg`}
             ></div>
             <div className="h-[3px] bg-[#4169E1]"></div>
-            <div className="p-4 md:p-6 flex flex-col h-full">
+            <div className="p-4 md:p-6 flex flex-col h-[400px]">
               <h3 className="text-black text-lg md:text-xl uppercase font-medium mb-3 md:mb-4">
                 GERENCIADOR TAREFAS
               </h3>
@@ -137,21 +137,21 @@ export default function Projects() {
 
           {/* Projeto 4 */}
           <motion.div
-            className="flex flex-col bg-zinc-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-[300px] md:h-[450px]"
+            className="flex flex-col bg-zinc-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-[300px] md:h-[450px] "
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, delay: 0.6 }}
             whileHover={{ scale: 1.02 }}
           >
             <div
-              className={`bg-[url('/img/tradutor.png')] bg-cover bg-center h-[200px] md:h-[550px]  rounded-t-lg`}
-            />
-            <div className="h-[3px] bg-[#4169E1]"></div>
-            <div className="p-4 md:p-6 flex flex-col h-full">
+              className={`bg-[url('/img/tradutor.png')] bg-cover bg-center h-[450px] md:h-[550px]  rounded-t-lg`}
+            ></div>
+            <div className="h-[3px] bg-[#4169E1] "></div>
+            <div className="p-4 md:p-6 flex flex-col h-[400px] ">
               <h3 className="text-black text-lg md:text-xl uppercase font-medium mb-3 md:mb-4">
                 TRADUTOR COM FLASK
               </h3>
-              <div className="flex flex-wrap gap-2 mb-3 md:mb-4">
+              <div className="flex flex-wrap gap-2 mb-3 md:mb-4 ">
                 <SpanLinguagens linguagem="PYTHON" />
                 <SpanLinguagens linguagem="FLASK" />
                 <SpanLinguagens linguagem="HTML" />
