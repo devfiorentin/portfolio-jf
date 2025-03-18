@@ -10,7 +10,7 @@ export default function Projects() {
   return (
     <motion.div
       id="projects"
-      className="container mx-auto px-4 md:px-20 lg:px-40 py-20 md:py-40"
+      className="container mx-auto px-4 md:px-20 lg:px-40 py-10 md:py-20"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -22,7 +22,7 @@ export default function Projects() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Projects
+          Projetos
         </motion.h2>
 
         {/* Contêiner para os projetos */}
@@ -53,12 +53,13 @@ export default function Projects() {
                 Landing Page, desenvolvida com Next JS, utilizando Tailwind CSS
                 e TypeScript. <br />
               </p>
+              <div className="mt-2 rounded-xl h-1 bg-gradient-to-r from-[#0047AB] to-[#4169E1] w-27"></div>
               <a
                 className="text-blue-500 mt-2 break-all"
                 href="https://mindflow-landing-page.vercel.app/"
                 target="_blank"
               >
-                https://mindflow-landing-page.vercel.app/
+               Acessar Projeto
               </a>
             </div>
           </motion.div>
@@ -94,12 +95,13 @@ export default function Projects() {
                 Projeto desenvolvido com React, JSX, Tailwind CSS e HTML. <br />
                 Como estudo de caso, fiz um app de previsão do tempo. <br />
               </p>
+              <div className="mt-2 rounded-xl h-1 bg-gradient-to-r from-[#0047AB] to-[#4169E1] w-27"></div>
               <a
                 className="text-blue-500 mt-2 break-all"
                 href="https://previsaodotempo-blond.vercel.app/"
                 target="_blank"
               >
-                https://previsaodotempo-blond.vercel.app/
+                Acessar Projeto
               </a>
             </div>
           </motion.div>
@@ -135,12 +137,13 @@ export default function Projects() {
                 A partir de uma video aula do canal do youtube , fiz um
                 gerenciador de tarefas.
               </p>
+              <div className="mt-2 rounded-xl h-1 bg-gradient-to-r from-[#0047AB] to-[#4169E1] w-27"></div>
               <a
                 className="text-blue-500 mt-2 break-all"
                 href="https://aula-react-hazel.vercel.app/"
                 target="_blank"
               >
-                https://aula-react-hazel.vercel.app/
+                Acessar Projeto
               </a>
             </div>
           </motion.div>
@@ -178,12 +181,13 @@ export default function Projects() {
                 Um simples site usando Flask (Python) e DeepTranslator para
                 traduzir textos. <br />
               </p>
+              <div className="mt-2 rounded-xl h-1 bg-gradient-to-r from-[#0047AB] to-[#4169E1] w-27"></div>
               <a
                 className="text-blue-500 mt-2 break-all"
                 href="https://github.com/devfiorentin/translator_flask"
                 target="_blank"
               >
-                https://github.com/devfiorentin/translator_flask
+                Acessar Projeto
               </a>
             </div>
           </motion.div>

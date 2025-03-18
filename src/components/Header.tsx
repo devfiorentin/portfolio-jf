@@ -6,6 +6,13 @@ export default function Header() {
     }
   };
 
+  const scrollToAboutMe = () => {
+    const aboutMeSection = document.getElementById("aboutme");
+    if (aboutMeSection) {
+      aboutMeSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const scrollToContato = () => {
     const contatoSection = document.getElementById("contato");
     if (contatoSection) {
@@ -29,6 +36,13 @@ export default function Header() {
 
           {/* Navegação no final */}
           <div className="flex items-center gap-4 md:gap-8">
+            <button
+              onClick={scrollToAboutMe}
+              className="text-white hover:text-gray-300 transition-colors text-sm md:text-base cursor-pointer"
+            >
+              Sobre mim
+            </button>
+
             <button
               onClick={scrollToProjetos}
               className="text-white hover:text-gray-300 transition-colors text-sm md:text-base cursor-pointer"
