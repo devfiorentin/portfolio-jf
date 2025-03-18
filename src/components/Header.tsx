@@ -14,7 +14,7 @@ export default function Header() {
   };
 
   return (
-    <div className="bg-[rgb(32,31,31)] w-full fixed top-0 left-0 right-0 z-50 shadow-lg">
+    <div className="bg-[rgb(14,14,14)] w-full fixed top-0 left-0 right-0 z-50 shadow-lg">
       <header className="container mx-auto px-8 md:px-20 lg:px-40 py-4 md:py-8">
         <nav className="flex justify-between items-center">
           {/* Logo/Home no início */}

@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 export default function App() {
   return (
-    <motion.div className="bg-neutral-900 min-h-screen w-full overflow-x-hidden">
+    <motion.div className="min-h-screen w-full overflow-x-hidden">
       <Header />
       <InfoPortfolio />
 

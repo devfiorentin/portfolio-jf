@@ -1,6 +1,11 @@
 import SpanLinguagens from "./SpanLinguagens";
 import { motion } from "framer-motion";
 
+import PROJ1 from "../../public/img/mindflow.png";
+import PROJ2 from "../../public/img/previsao.png";
+import PROJ3 from "../../public/img/gerenciamento.png";
+import PROJ4 from "../../public/img/tradutor.png";
+
 export default function Projects() {
   return (
     <motion.div
@@ -24,17 +29,18 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-2 md:px-0">
           {/* Projeto 1 */}
           <motion.div
-            className="flex flex-col bg-zinc-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-[300px] md:h-[450px]"
+            className="flex flex-col bg-zinc-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, delay: 0.3 }}
             whileHover={{ scale: 1.02 }}
           >
-            <div
-              className={`bg-[url('/img/mindflow.png')] bg-cover bg-center h-[450px] md:h-[550px] rounded-t-lg`}
-            ></div>
-            <div className="h-[3px] bg-[#4169E1]"></div>
-            <div className="p-4 md:p-6 flex flex-col h-[400px]">
+            {/* IMAGEM PROJETO 1 */}
+            <div className="h-[200px] md:h-[300px]">
+              <img src={PROJ1} alt="" className="h-full w-full rounded-t-lg" />{" "}
+            </div>
+
+            <div className="p-4 md:p-6 flex flex-col">
               <h3 className="text-black text-lg md:text-xl uppercase font-medium mb-3 md:mb-4">
                 LANDING PAGE
               </h3>
@@ -59,17 +65,23 @@ export default function Projects() {
 
           {/* Projeto 2 */}
           <motion.div
-            className="flex flex-col bg-zinc-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-[300px] md:h-[450px]"
+            className="flex flex-col bg-zinc-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, delay: 0.4 }}
             whileHover={{ scale: 1.02 }}
           >
-            <div
-              className={`bg-[url('/img/previsao.png')] bg-cover bg-center h-[450px] md:h-[550px] rounded-t-lg`}
-            ></div>
-            <div className="h-[3px] bg-[#4169E1]"></div>
-            <div className="p-4 md:p-6 flex flex-col h-[400px]">
+            {/* IMAGEM PROJETO 2 */}
+            <div className="h-[200px] md:h-[300px]">
+              {" "}
+              <img
+                src={PROJ2}
+                alt=""
+                className="h-full w-full rounded-t-lg"
+              />{" "}
+            </div>
+
+            <div className="p-4 md:p-6 flex flex-col ">
               <h3 className="text-black text-lg md:text-xl uppercase font-medium mb-3 md:mb-4">
                 PREVISÃO DO TEMPO
               </h3>
@@ -94,17 +106,23 @@ export default function Projects() {
 
           {/* Projeto 3 */}
           <motion.div
-            className="flex flex-col bg-zinc-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-[300px] md:h-[450px]"
+            className="flex flex-col bg-zinc-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, delay: 0.5 }}
             whileHover={{ scale: 1.02 }}
           >
-            <div
-              className={`bg-[url('/img/gerenciamento.png')] bg-cover bg-center h-full md:h-[550px] rounded-t-lg`}
-            ></div>
-            <div className="h-[3px] bg-[#4169E1]"></div>
-            <div className="p-4 md:p-6 flex flex-col h-[400px]">
+            {/* IMAGEM PROJETO 3 */}
+            <div className="h-[200px] md:h-[300px]">
+              {" "}
+              <img
+                src={PROJ3}
+                alt=""
+                className="h-full w-full rounded-t-lg"
+              />{" "}
+            </div>
+
+            <div className="p-4 md:p-6 flex flex-col">
               <h3 className="text-black text-lg md:text-xl uppercase font-medium mb-3 md:mb-4">
                 GERENCIADOR TAREFAS
               </h3>
@@ -114,16 +132,8 @@ export default function Projects() {
                 <SpanLinguagens linguagem="TAILWIND CSS" />
               </div>
               <p className="text-gray-700 text-sm md:text-base flex-grow">
-                A partir de uma video aula do canal do youtube{" "}
-                <a
-                  className="text-[#4169E1] font-bold"
-                  href="https://www.youtube.com/watch?v=2RWsLmu8yVc&t=4808s&ab_channel=FelipeRocha%E2%80%A2FullStackClub"
-                  target="_blank"
-                >
-                  Felipe Rocha - Full Stack Club
-                </a>
-                , fiz um gerenciador de tarefas. <br />
-                Começo dos meus estudos com React. <br />
+                A partir de uma video aula do canal do youtube , fiz um
+                gerenciador de tarefas.
               </p>
               <a
                 className="text-blue-500 mt-2 break-all"
@@ -137,17 +147,23 @@ export default function Projects() {
 
           {/* Projeto 4 */}
           <motion.div
-            className="flex flex-col bg-zinc-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-[300px] md:h-[450px] "
+            className="flex flex-col bg-zinc-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, delay: 0.6 }}
             whileHover={{ scale: 1.02 }}
           >
-            <div
-              className={`bg-[url('/img/tradutor.png')] bg-cover bg-center h-[450px] md:h-[550px]  rounded-t-lg`}
-            ></div>
-            <div className="h-[3px] bg-[#4169E1] "></div>
-            <div className="p-4 md:p-6 flex flex-col h-[400px] ">
+            {/* IMAGEM PROJETO 4 */}
+            <div className="h-[200px] md:h-[300px]">
+              {" "}
+              <img
+                src={PROJ4}
+                alt=""
+                className="h-full w-full rounded-t-lg"
+              />{" "}
+            </div>
+
+            <div className="p-4 md:p-6 flex flex-col ">
               <h3 className="text-black text-lg md:text-xl uppercase font-medium mb-3 md:mb-4">
                 TRADUTOR COM FLASK
               </h3>
@@ -159,8 +175,8 @@ export default function Projects() {
                 <SpanLinguagens linguagem="DEEP TRANSLATOR" />
               </div>
               <p className="text-gray-700 text-sm md:text-base flex-grow">
-                Um simples site usando Flask e DeepTranslator para traduzir
-                texto. <br />
+                Um simples site usando Flask (Python) e DeepTranslator para
+                traduzir textos. <br />
               </p>
               <a
                 className="text-blue-500 mt-2 break-all"

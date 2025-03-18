@@ -14,18 +14,21 @@ export default function InfoPortfolio() {
       transition={{ duration: 0.5 }}
     >
       <section className="w-full items-left md:items-left text-left md:text-left">
-        <span className="uppercase text-withe text-[16px] md:text-[20px]">
+        <span className="uppercase text-withe text-[16px] md:text-[20px] font-semibold">
           Desenvolvedor Web
         </span>
         <h1 className="weigth-600 bg-[linear-gradient(90deg,_#0047AB_0%,_#4169E1_100%)] bg-clip-text text-transparent text-[36px] md:text-[50px] mt-2 font-bold">
           Jean Fiorentin
         </h1>
-        <p className="text-[#E6E6E6] text-base md:text-[20px] mt-5 mb-10">
+        <p className="text-[#E6E6E6] md:text-[19px] mt-5 mb-10">
           Estudante de Desenvolvimento Web. <br />
           Atualmente, estou aprendendo{" "}
-          <strong>React, Next.js, TypeScript, Tailwind CSS,</strong> e mais...
+          <span className="font-semibold">
+            React, Next.js, TypeScript, Tailwind CSS,{" "}
+          </span>{" "}
+          e mais...
           <br /> <br />
-          Estou aberto a oportunidades de trabalho remoto!
+          Estou aberto a novas oportunidades!
         </p>
 
         <a
