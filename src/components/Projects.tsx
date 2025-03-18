@@ -36,7 +36,7 @@ export default function Projects() {
             whileHover={{ scale: 1.02 }}
           >
             {/* IMAGEM PROJETO 1 */}
-            <div className="h-[200px] md:h-[300px]">
+            <div className="h-auto md:h-[300px]">
               <img src={PROJ1} alt="" className="h-full w-full rounded-t-lg" />{" "}
             </div>
 
@@ -72,7 +72,7 @@ export default function Projects() {
             whileHover={{ scale: 1.02 }}
           >
             {/* IMAGEM PROJETO 2 */}
-            <div className="h-[200px] md:h-[300px]">
+            <div className="h-auto md:h-[300px]">
               {" "}
               <img
                 src={PROJ2}
@@ -113,7 +113,7 @@ export default function Projects() {
             whileHover={{ scale: 1.02 }}
           >
             {/* IMAGEM PROJETO 3 */}
-            <div className="h-[200px] md:h-[300px]">
+            <div className="h-auto md:h-[300px]">
               {" "}
               <img
                 src={PROJ3}
@@ -154,7 +154,7 @@ export default function Projects() {
             whileHover={{ scale: 1.02 }}
           >
             {/* IMAGEM PROJETO 4 */}
-            <div className="h-[200px] md:h-[300px]">
+            <div className="h-auto md:h-[300px]">
               {" "}
               <img
                 src={PROJ4}
